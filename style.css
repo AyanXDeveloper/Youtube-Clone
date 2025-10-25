@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.menu {
+    width: 20%;
+}
+
+.search {
+    width: 60%;
+}
+
+.search-div {
+    width: 80%;
+}
+.search-input {
+    border-radius: 40px 0 0 40px;
+    padding: 0 4px 0 16px;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    box-shadow: inset 0 1px 2px #eee;
+    height: 40px;
+    width: 100%;
+}
+
+.search-btn {
+    height: 40px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    width: 64px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+}
+
+.voice-btn {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    border-radius: 50px;
+}
+
+.create-btn {
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #d3d3d3;
+    font-weight: 400;
+}
+
+.profile-img {
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+}
+
+@media (max-width: 576px) {
+  .search-div {
+    flex: 1;
+  }
+
+  .search-input {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .create-btn {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .voice-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+    .menu,
+    .search,
+    .account {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .account {
+        justify-content: center !important;
+        padding-top: 10px;
+    }
+
+    .create-btn {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .navbar .row {
+        row-gap: 10px;
+    }
+}
+
+
+.menu-icons {
+    width: 5%;
+}
+
+@media (max-width: 768px) {
+    .menu-icons{
+        display: none!important;
+    }
+    .content{
+        width: 100%!important;
+    }
+}
+
+.content {
+    width: 95%;
+}
+
+.menu-text {
+    font-size: 11px;
+}
+
+.width-fit-content {
+    width: 70%;
+}
+
+.video-type-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 16px;
+    scrollbar-width: none; /* Firefox */
+}
+
+.video-type-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.video-type {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.v-type-div1 {
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: #000;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.v-type-p1 {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.v-type-div {
+    padding:5px 12px;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.v-type-p {
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+}
+
+.video1 {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 260px;
+    max-width: 33%;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .video1{
+      max-width: 100%;
+    }
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+    border-radius: 12px;
+  object-fit: cover;
+}
+
+.title {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  font-weight: 600;
+    margin: 0;
+}
+
+.channel,
+.data {
+    margin: 0;
+  font-size: 14px;
+  color: #606060;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+@media (max-width: 992px) {
+  .video1 {
+        flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .video1 {
+    flex: 1 1 100%;
+  }
+}
+
+.modal-customization {
+    border-radius: 20px;
+}
+
+.upload-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#video-upload {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.custom-file-upload:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+.selected-file-name {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+}
